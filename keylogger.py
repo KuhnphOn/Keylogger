@@ -2,7 +2,6 @@ from pynput import keyboard
 
 count = 0
 
-
 def on_press(key):
     global count
     try:
@@ -43,7 +42,6 @@ def on_press(key):
     else:
         pass
 
-
 def on_release(key):
     global count
     if key == keyboard.Key.esc:
@@ -51,7 +49,6 @@ def on_release(key):
         #print("Count: ", count)
     if count >= 5:
         return False
-
 
 # Collect events until released
 with keyboard.Listener(on_press=on_press, on_release=on_release) as listener:
