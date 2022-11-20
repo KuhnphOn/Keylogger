@@ -1,1 +1,1 @@
-This Python code log keyboard pressed key into textfile.
+This Python code log keyboard pressed key into text file.
